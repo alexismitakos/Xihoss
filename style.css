@@ -1,0 +1,185 @@
+/* Style global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+/* Style pour l'image en entête */
+.image_tete {
+    display: block;
+    width: 100%;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Style pour le titre */
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style pour la description */
+.description {
+    max-width: 70%;
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style pour le lien cliquable */
+.clickable-area {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 100;
+}
+
+.clickable-area:hover {
+    background-color: #555;
+}
+
+/* Style pour le sous-titre */
+.subtitle {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour la galerie */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.imagefin {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Style pour la zone de texte responsive */
+.responsive-text {
+    max-width: 55%;
+    margin: 20px auto;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style pour espacer les éléments */
+.element {
+    margin-bottom: 60px;
+}
+
+/* Style pour le footer et espacement */
+.footer-container {
+    margin-top: 40px; /* Ajoute un espace entre le texte et l'image cliquable */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Image cliquable */
+.clickable-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1);
+}
+
+/* Media queries pour rendre le design responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .clickable-area {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .gallery {
+        gap: 20px;
+    }
+
+    .imagefin {
+        width: 80%;
+    }
+
+    .responsive-text {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .element {
+        margin-bottom: 100px;
+    }
+    
+    .clickable-image {
+        width: 100px;
+    }
+}
+/* Espace noir en bas du site */
+.black-space {
+    width: 100%;
+    background-color: black;
+    height: 100px; /* Hauteur par défaut */
+}
+
+/* Media query pour rendre l'espace responsive */
+@media (max-width: 768px) {
+    .black-space {
+        height: 60px; /* Hauteur réduite sur petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .black-space {
+        height: 40px; /* Hauteur encore plus réduite pour très petits écrans */
+    }
+}
